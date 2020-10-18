@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+	background-color: black;
+	text-align: center;
+}
+h2, h3{
+	color: white;
+}
+
+.box input{
+	color: black;
+	text-align: center;
+	border: solid brown;
+}
+button{
+	font-size: 10px;
+	font-weight: bold;
+	color: white;
+	text-transform: uppercase;
+	background: linear-gradient(brown, black, grey);
+	border-radius: 4px;
+	padding: 10px 20px;
+}
+button:hover {
+	background: linear-gradient(grey, grey, black);
+}
+
+</style>
+</head>
+<body>
+<h2>Click the button to see the number of paired socks.</h2>
+<form class="box">
+<h3>Enter size of array :</h3> <input type="number" name="size" id="size" value="" /><br><br>
+<button onclick="socksPair()">Hit it</button>
+</form>
+
+<script>
+function socksPair() {
+	
+	var socks = [];
+	var count = 0;
+	const s = document.getElementById("size").value;
+	
+	for(var k=0; k<s; k++) {
+	socks[k] = prompt('Enter Element ' + (k+1));
+	}
+	
+	  for(var i=0;i<socks.length-1;i++)
+			{
+				for(var j=i+1;j<socks.length;j++)
+				{
+					if(socks[i]!=0)
+					{
+						if(socks[i]==socks[j])
+						{
+							count++;
+							socks[i] = 0;
+							socks[j] = 0;
+						}
+					}
+					else
+					{
+						continue;
+					}                    
+				}
+			}
+	alert("The number of paired socks : " +count);
+	}
+</script>
+
+</body>
+</html>
