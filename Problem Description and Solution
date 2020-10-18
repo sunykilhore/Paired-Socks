@@ -10,9 +10,9 @@ Problem
 Write a program in Java Script that will take shocks array as input and returns number of pairs for every unique color. 
 
 Solution:
-
+--> Run the Socks Sale.html file in google chrome.
 This is a code in javascript and html to calcute the number of paired socks.
-Simply run the html file in google chrome.
+
 It take 2 inputs from the user : 
 1. Enter the size of array
 2. Enter the elements in the array.
