@@ -1,0 +1,19 @@
+# Paired-Socks
+
+PROBLEM :
+Rohit works at a clothing store. He has a large pile of socks that he must pair by colour for sale. 
+Given an array of integers representing the color of each sock, determine how many pairs of socks with matching colors there are. 
+For example, there are n=17 with color ar=[1,1,1,1,2,3,3,3,3,3,3,3,4,4,4,4,4] . There is two pair of color 1 , three of color 3 and two of color 4 . 
+There are three odd socks left, one of color 2 , color 3 and color 4 . The number of pair is 7 . 
+
+Problem 
+Write a program in Java Script that will take shocks array as input and returns number of pairs for every unique color. 
+
+Solution:
+
+This is a code in javascript and html to calcute the number of paired socks.
+Simply run the html file in google chrome.
+It take 2 inputs from the user : 
+1. Enter the size of array
+2. Enter the elements in the array.
+Then it calculates the number of socks that are in pair and display the output accordingly.
